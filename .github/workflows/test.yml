@@ -1,0 +1,22 @@
+name: "Godot Tests (GUT)"
+
+on: push
+
+env:
+  GODOT_VERSION: 3.4.4
+
+
+jobs:
+  gut-tests:
+    name: GUT Tests
+    runs-on: ubuntu-latest
+    container:
+      image: docker://barichello/godot-ci:${GODOT_VERSION}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Set gut alias
+        run : alias gut="godot -d -s --path $PWD addons/gut/gut_cmdln.gd"
+      - name: Run Tests
+        run: gut -gexit
