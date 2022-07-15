@@ -11,7 +11,7 @@ jobs:
     name: GUT Tests
     runs-on: ubuntu-latest
     container:
-      image: docker://barichello/godot-ci:${GODOT_VERSION}
+      image: docker://barichello/godot-ci:${{ env.GODOT_VERSION }}
 
     steps:
       - name: Checkout
