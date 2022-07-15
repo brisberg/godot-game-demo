@@ -27,7 +27,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "SimpleClass",
 "language": "GDScript",
-"path": "res://simple-class.gd"
+"path": "res://scripts/simple-class.gd"
 } ]
 _global_script_class_icons={
 "GitAPI": "",

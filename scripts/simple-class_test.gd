@@ -1,7 +1,7 @@
 extends GutTest
 
 
-var SimpleClass = load('res://simple-class.gd')
+var SimpleClass = load('res://scripts/simple-class.gd')
 var obj: SimpleClass = null
 
 func before_each():
