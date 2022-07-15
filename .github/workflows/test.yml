@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Set gut alias
-        run : alias gut="godot -d -s --path $PWD addons/gut/gut_cmdln.gd"
       - name: Run Tests
-        run: gut -gexit
+        run : |
+          alias gut="godot -d -s --path $PWD addons/gut/gut_cmdln.gd"
+          gut -gexit
