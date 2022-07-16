@@ -1,7 +1,7 @@
 extends GutTest
 
 
-var SimpleClass = load('res://scripts/simple-class.gd')
+var SimpleClass = load('res://scriptssds/simple-class.gd')
 var obj: SimpleClass = null
 
 func before_each():
@@ -13,5 +13,3 @@ func after_each():
 
 func test_assert_member_equals_2():
 	assert_eq(obj.getVariable(), 2)
-
-# TODO Run these tests on windows, WSL, or Git Actions

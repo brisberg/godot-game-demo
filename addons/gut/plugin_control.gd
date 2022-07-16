@@ -73,7 +73,7 @@ export var _disable_strict_datatype_checks = false
 export var _test_prefix = 'test_'
 # The prefix used to find test scripts.
 export var _file_prefix = 'test_'
-# The prefix used to find test scripts.
+# The suffix used to find test scripts.
 export var _file_suffix = '.gd'
 # The file extension for test scripts (I don't think you can change this and
 # everythign work).
