@@ -14,5 +14,5 @@ jobs:
         uses: actions/checkout@v1
       - name: Run Tests
         run : |
-          alias gut="godot -d -s --path $PWD addons/gut/gut_cmdln.gd"
+          alias gut="godot --path $PWD -s addons/gut/gut_cmdln.gd"
           gut -gexit
